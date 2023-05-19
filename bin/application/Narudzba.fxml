@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="407.0" style="-fx-background-color: #0B291A;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NarudzbaController">
+   <children>
+      <TextField fx:id="TextFieldIme" layoutX="129.0" layoutY="45.0" promptText="Ime" />
+      <TextField fx:id="TextFieldGrad" layoutX="129.0" layoutY="93.0" promptText="Grad" />
+      <TextField fx:id="TextFieldAdresa" layoutX="129.0" layoutY="136.0" prefHeight="25.0" prefWidth="92.0" promptText="Adresa" />
+      <MenuButton fx:id="ButtonPlacanje" layoutX="129.0" layoutY="183.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Način plaćanja">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Pouzecem" />
+        </items>
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </MenuButton>
+      <MenuButton fx:id="ButtonPosta" layoutX="129.0" layoutY="232.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Vrsta pošte">
+        <items>
+          <MenuItem fx:id="MenuItemE" mnemonicParsing="false" onAction="#meniItemE" text="EuroExpres" />
+            <MenuItem fx:id="MenuItemP" mnemonicParsing="false" onAction="#menuItemP" text="PosteSrpske" />
+          <MenuItem fx:id="MenuItemX" mnemonicParsing="false" onAction="#menuItemX" text="XExpress" />
+        </items>
+      </MenuButton>
+      <Button fx:id="ButtonPotvrdi" layoutX="81.0" layoutY="282.0" mnemonicParsing="false" onAction="#Potvrdi" prefHeight="35.0" prefWidth="80.0" text="Potvrdi">
+         <font>
+            <Font name="Corbel Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonOtkazi" layoutX="226.0" layoutY="282.0" mnemonicParsing="false" onAction="#Otkazi" prefHeight="35.0" prefWidth="80.0" text="Otkaži">
+         <font>
+            <Font name="Corbel" size="13.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="ImageNarudzba" fitHeight="62.0" fitWidth="72.0" layoutX="173.0" layoutY="337.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/order-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="TextFieldbr" layoutX="232.0" layoutY="136.0" prefHeight="25.0" prefWidth="47.0" promptText="br" />
+   </children>
+</AnchorPane>
